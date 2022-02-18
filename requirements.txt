@@ -3,9 +3,9 @@ flask
 gdown
 inflect
 jieba
-librosa==0.8.0
+librosa
 matplotlib
-numpy==1.19.5
+numpy
 pandas
 pypinyin
 pysbd
@@ -15,13 +15,13 @@ soundfile
 tensorboardX
 torch>=1.7
 tqdm
-numba==0.53
-umap-learn==0.5.1
+numba
+umap-learn
 anyascii
 coqpit
 # japanese g2p deps
-mecab-python3==1.0.3
-unidic-lite==1.0.8
+mecab-python3
+unidic-lite
 # gruut+supported langs
 gruut[cs,de,es,fr,it,nl,pt,ru,sv]~=2.0.0
 fsspec>=2021.04.0

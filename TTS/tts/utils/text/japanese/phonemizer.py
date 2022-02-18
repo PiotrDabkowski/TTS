@@ -3,8 +3,11 @@
 
 import re
 import unicodedata
-
-import MeCab
+try:
+    import MeCab
+    _TAGGER = MeCab.Tagger()
+except:
+    print("japanese will not be supported, MeCab is not installed.")
 from num2words import num2words
 
 _CONVRULES = [
@@ -349,7 +352,7 @@ def hira2kata(text: str) -> str:
 
 _SYMBOL_TOKENS = set(list("・、。？！"))
 _NO_YOMI_TOKENS = set(list("「」『』―（）［］[]　…"))
-_TAGGER = MeCab.Tagger()
+
 
 
 def text2kata(text: str) -> str:

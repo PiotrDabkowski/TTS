@@ -73,10 +73,10 @@ with open("README.md", "r", encoding="utf-8") as readme_file:
     README = readme_file.read()
 
 exts = [
-    Extension(
-        name="TTS.tts.utils.monotonic_align.core",
-        sources=["TTS/tts/utils/monotonic_align/core.pyx"],
-    )
+#     Extension(
+#         name="TTS.tts.utils.monotonic_align.core",
+#         sources=["TTS/tts/utils/monotonic_align/core.pyx"],
+#     )
 ]
 setup(
     name="TTS",
